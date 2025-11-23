@@ -31,6 +31,25 @@ Your application is a **Single Page Application (SPA)** built with Vite and Reac
 
 To test the production build locally before deploying:
 
-```bash
 npm run preview
 ```
+
+## Option 4: GitHub Pages (Active)
+
+Your project is currently deployed to GitHub Pages.
+
+**Live URL**: [https://lekoon.github.io/CTPMtool/](https://lekoon.github.io/CTPMtool/)
+
+**How to Update**:
+1.  Make your changes.
+2.  Commit your changes:
+    ```bash
+    git add .
+    git commit -m "Description of changes"
+    git push
+    ```
+3.  Deploy the updates:
+    ```bash
+    npm run deploy
+    ```
+
