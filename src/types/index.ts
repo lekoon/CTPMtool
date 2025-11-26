@@ -109,6 +109,7 @@ export interface Project {
     rank?: number;
 
     resourceRequirements: ResourceRequirement[];
+    estimatedCost?: number; // 预估成本
 }
 
 // Default Factors (for initialization)

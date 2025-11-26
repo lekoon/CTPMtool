@@ -11,6 +11,8 @@ import Login from './pages/Login';
 import Profile from './pages/Profile';
 import UserWorkbench from './pages/UserWorkbench';
 import ProjectDetail from './pages/ProjectDetail';
+import AIDecisionDashboard from './pages/AIDecisionDashboard';
+import AdvancedReports from './pages/AdvancedReports';
 import ErrorBoundary from './components/ErrorBoundary';
 import KeyboardShortcutsHelp from './components/KeyboardShortcutsHelp';
 
@@ -90,6 +92,22 @@ function App() {
             <ProtectedRoute>
               <Layout>
                 <ProjectDetail />
+              </Layout>
+            </ProtectedRoute>
+          } />
+
+          <Route path="/ai-decision" element={
+            <ProtectedRoute>
+              <Layout>
+                <AIDecisionDashboard />
+              </Layout>
+            </ProtectedRoute>
+          } />
+
+          <Route path="/reports" element={
+            <ProtectedRoute>
+              <Layout>
+                <AdvancedReports />
               </Layout>
             </ProtectedRoute>
           } />

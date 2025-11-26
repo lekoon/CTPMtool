@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, FolderKanban, PieChart, Settings, Menu, Users, LogOut, Globe, Moon, Sun, Bell, Check, Trash2, Briefcase } from 'lucide-react';
+import { LayoutDashboard, FolderKanban, PieChart, Settings, Menu, Users, LogOut, Globe, Moon, Sun, Bell, Check, Trash2, Briefcase, Brain, FileText } from 'lucide-react';
 import { checkDeadlines, checkResourceConflicts } from '../utils/notifications';
 import clsx from 'clsx';
 import { useStore } from '../store/useStore';
@@ -48,6 +48,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         { label: t('common.projects'), path: '/projects', icon: FolderKanban },
         { label: t('common.resources'), path: '/resources', icon: Users },
         { label: t('common.workbench'), path: '/workbench', icon: Briefcase },
+        { label: t('ai.intelligentInsights'), path: '/ai-decision', icon: Brain },
+        { label: t('reports.advancedReports'), path: '/reports', icon: FileText },
         { label: t('common.analysis'), path: '/analysis', icon: PieChart },
         { label: t('common.settings'), path: '/settings', icon: Settings },
     ];
